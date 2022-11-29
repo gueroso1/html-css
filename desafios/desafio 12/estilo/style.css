@@ -18,7 +18,7 @@ html, body {
     background-color: darkgray;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-height: 100vh;
-    min-width: 320px;
+    text-align: center;
 }
 
 header {
@@ -55,7 +55,13 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    padding-right: 30px;
     font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -66,12 +72,26 @@ section.normal {
 section.imagem{
     background-color: rgb(79, 79, 79);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.472);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.255);
+    background-color: rgba(0, 0, 0, 0.515);
     display: inline-block;
     padding: 10px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#flor {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#folha {
+    background-image: url(../imagens/background002.jpg);
+    background-position: left center;
 }
 
 footer {
