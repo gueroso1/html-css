@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo {
+            max-height: 400px;
+            max-width: 400px;
+            background-color: lightgray;
+            position: absolute;
+            padding: 10px;
+            text-align: center;
+            border-radius: 20px;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(26%, -83%);
+        }
+
+        #cu {
+            max-height: 400px;
+            max-width: 400px;
+            background-color: lightgray;
+            padding: 10px;
+            text-align: center;
+            border-radius: 20px;
+            
+            position: absolute;
+
+            left: 40%;
+            top: 40%;
+
+            transform: translate(-81%, -61%);
+        }
+
+        #conteudo img {
+            padding-top: 18px;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+            <h1>Titulo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, cumque nobis quia corrupti nulla distinctio tenetur culpa repudiandae sint harum nostrum mollitia molestiae? Dolorum dolores consectetur, quis facilis mollitia rem!
+            Inventore ea expedita totam repudiandae vel voluptatibus blanditiis minus nobis error nostrum reiciendis pariatur dicta necessitatibus quod corrupti, dolorem tempora asperiores quis. Libero sapiente esse omnis saepe minus, laudantium atque!
+            Quae, eos! Laudantium odit sunt perferendis nam. Aliquam, modi tenetur aperiam voluptatum molestias, hic temporibus pariatur aspernatur numquam eveniet quis illum animi commodi delectus </p>
+            <img src="imagens/pattern001.png" alt="cu da imagem">
+        </article>
+
+        <article id="cu">
+            <h1>titulo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, cumque nobis quia corrupti nulla distinctio tenetur culpa repudiandae sint harum nostrum mollitia molestiae? Dolorum dolores consectetur, quis facilis mollitia rem!
+                Inventore ea expedita totam repudiandae vel voluptatibus blanditiis minus nobis error nostrum reiciendis pariatur dicta necessitatibus quod corrupti, dolorem tempora asperiores quis. Libero sapiente esse omnis saepe minus, laudantium atque!
+                Quae, eos! Laudantium odit sunt perferendis nam. Aliquam, modi tenetur aperiam voluptatum molestias, hic temporibus pariatur aspernatur numquam eveniet quis illum animi commodi delectus a expedita! Velit, officia beatae? Totam.</p>
+            <img src="imagens/pattern001.png" alt="imagem do cu">
+        </article>
+    </section>
+</body>
+</html>
