@@ -19,8 +19,22 @@ header > h1 {
     text-align: center;
 }
 
-nav {
+#burguin {
+    background-color: rgb(48, 48, 48);
+    color: white;
     display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burguin:hover {
+    background-color: rgb(142, 141, 141);
+    color: black;
+}
+
+nav {
+    display: none;
 }
 
 nav > ul {
