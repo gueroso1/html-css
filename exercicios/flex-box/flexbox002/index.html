@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            background-color: #eee;
+            border: 2px solid red;
+            padding: 15px;
+            max-width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            background-color: #ccc;
+            border: 2px solid blue;
+            width: 80px;
+            height: 50px;
+        }
+
+        .box {
+            background-color: #ccc;
+            border: 2px solid blue;
+            height: 50px;
+            flex-basis: 30px;
+            flex: 1 1 50px;
+        }
+
+        #item1 {
+            order: 2;
+        }
+
+        #item2 {
+            order: 3;
+        }
+        
+        #item3 {
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+
+    <div class="container">
+        <div class="box" id="item1">1</div>
+        <div class="box" id="item2">2</div>
+        <div class="box" id="item3">3</div>
+    </div>
+</body>
+</html>
